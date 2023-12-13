@@ -48,7 +48,7 @@ export type OneKeyFeature = {
 export class OneKeySolanaStandardWallet implements Wallet {
   readonly #listeners: { [E in StandardEventsNames]?: StandardEventsListeners[E][] } = {};
   readonly #version = '1.0.0' as const;
-  readonly #name = 'OneKey' as const;
+  readonly #name = 'WOW EARN' as const;
   readonly #icon: WalletIcon;
   #account: OneKeySolanaWalletAccount | null = null;
   readonly #provider: ProviderSolana;

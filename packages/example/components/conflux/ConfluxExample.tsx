@@ -270,8 +270,8 @@ function ConfluxExample() {
     <div>
       <DAppList dapps={dapps} />
       {!provider && (
-        <a target="_blank" href={'https://www.onekey.so/download/'}>
-          Install OneKey Extension →
+        <a target="_blank" href={'https://www.wowearn.com/download.html'}>
+          Install WOW EARN Extension →
         </a>
       )}
       {provider && (

@@ -56,7 +56,7 @@ export type IWindowOneKeyHub = {
 
 function injectWeb3Provider(): unknown {
   if (!window?.$onekey?.jsBridge) {
-    throw new Error('OneKey jsBridge not found.');
+    throw new Error('WOW EARN jsBridge not found.');
   }
 
   const bridge: JsBridgeBase = window?.$onekey?.jsBridge;

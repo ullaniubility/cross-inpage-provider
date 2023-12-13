@@ -40,8 +40,8 @@ export default function App() {
   const [network, setNetwork] = useState<string>('');
   const [connected, setConnected] = useState<boolean>(false);
   const [address, setAddress] = useState<string | null>(null);
-  const [collectionName, setCollectionName] = useState<string>('OneKey-Collection');
-  const [nftTokenName, setNftTokenName] = useState<string>('OneKey-NFT-1');
+  const [collectionName, setCollectionName] = useState<string>('WOW EARN-Collection');
+  const [nftTokenName, setNftTokenName] = useState<string>('WOW EARN-NFT-1');
 
   useEffect(() => {
     if (!provider) return;
@@ -303,8 +303,8 @@ export default function App() {
     <div>
       <DAppList dapps={dapps} />
       {!provider && (
-        <a target="_blank" href={'https://www.onekey.so/download/'}>
-          Install OneKey Extension →
+        <a target="_blank" href={'https://www.wowearn.com/download.html'}>
+          Install WOW EARN Extension →
         </a>
       )}
       <main>

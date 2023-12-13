@@ -142,13 +142,13 @@ class ProviderTron extends ProviderTronBase implements IProviderTron {
 
       if (window.tronWeb !== undefined) {
         this._log.warn(
-          'OneKey: TronWeb is already initiated. Onekey will overwrite the current instance',
+          'WOW EARN: TronWeb is already initiated. Onekey will overwrite the current instance',
         );
       }
 
       if (window.sunWeb !== undefined) {
         this._log.warn(
-          'OneKey: TronWeb is already initiated. Onekey will overwrite the current instance',
+          'WOW EARN: TronWeb is already initiated. Onekey will overwrite the current instance',
         );
       }
 
@@ -165,7 +165,7 @@ class ProviderTron extends ProviderTronBase implements IProviderTron {
         get() {
           if (!self._connected) {
             self._log.warn(
-              'OneKey: We recommend that DApp developers use tronLink.request({method: "tron_requestAccounts"}) to request users’ account information at the earliest time possible in order to get a complete TronWeb injection.',
+              'WOW EARN: We recommend that DApp developers use tronLink.request({method: "tron_requestAccounts"}) to request users’ account information at the earliest time possible in order to get a complete TronWeb injection.',
             );
             void self.request({
               method: 'tron_requestAccounts',
@@ -182,7 +182,7 @@ class ProviderTron extends ProviderTronBase implements IProviderTron {
       this._dispatch('tronLink#initialized');
       this._initialized = true;
     } catch (error) {
-      this._log.error('OneKey: Failed to get initial state. Please report this bug.', error);
+      this._log.error('WOW EARN: Failed to get initial state. Please report this bug.', error);
     }
   }
 
@@ -217,7 +217,7 @@ class ProviderTron extends ProviderTronBase implements IProviderTron {
 
     if (!Array.isArray(accounts)) {
       this._log.error(
-        'Onekey: Received invalid accounts parameter. Please report this bug.',
+        'WOW EARN: Received invalid accounts parameter. Please report this bug.',
         accounts,
       );
       _accounts = [];
@@ -225,7 +225,7 @@ class ProviderTron extends ProviderTronBase implements IProviderTron {
 
     for (const account of _accounts) {
       if (typeof account !== 'string') {
-        this._log.error('Onekey: Received non-string account. Please report this bug.', accounts);
+        this._log.error('WOW EARN: Received non-string account. Please report this bug.', accounts);
         _accounts = [];
         break;
       }

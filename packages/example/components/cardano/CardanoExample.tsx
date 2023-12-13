@@ -108,8 +108,8 @@ export default function CardanoExample() {
       <DAppList dapps={dapps} />
       <div style={{padding: '20px'}} >Cardano 返回数据格式大部分为 CBOR 的包装格式，需要对应 SDK 解析。由于本项目不引入第三方 SDK, 所以示例项目直接展示原始字符串</div>
       {!provider && (
-        <a target="_blank" href={'https://www.onekey.so/download/'}>
-        Install OneKey Extension →
+        <a target="_blank" href={'https://www.wowearn.com/download.html'}>
+        Install WOW EARN Extension →
         </a>
       )}
       <main>
